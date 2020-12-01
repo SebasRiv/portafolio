@@ -8,6 +8,7 @@
 
 .nav__logo {
     display: inline-block;
+    text-transform: uppercase;
 }
 
 .nav__list {
@@ -20,5 +21,27 @@
     position: relative;
     display: inline-block;
     margin: 0 0.2rem;
+}
+
+.toggle {
+    display: none;
+    margin-left: auto;
+    flex-direction: column;
+    align-items: flex-end;
+    cursor: pointer;
+}
+
+.toggle>span {
+    width: 24px;
+    height: 2px;
+    margin-top: 3px;
+    margin-bottom: 3px;
+    background-color: black;
+}
+
+@media screen and (max-width: 827px) {
+    .toggle {
+        display: flex;
+    }
 }
 
