@@ -39,7 +39,12 @@
     background-color: black;
 }
 
+.nav-social {
+    margin-left: 2rem;
+}
+
 @media screen and (max-width: 827px) {
+
     .toggle {
         display: flex;
     }
