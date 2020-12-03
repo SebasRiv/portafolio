@@ -60,6 +60,19 @@
         flex-direction: column;
     }
 
+    // Resolver como hacer este selector
+    #btn-menu:checked(:first-child) {
+        transform: rotate(45deg) translateX(.5px);;
+    }
+
+    #btn-menu:checked(:nth-child(2)) {
+        opacity: 0;
+    }
+
+    #btn-menu:checked(:last-child) {
+        transform: rotate(-45deg) translateX(.5px);;
+    }
+    // fin de zona a corregir
     #btn-menu:checked ~ .nav__list {
         display: flex;
         position: absolute;
