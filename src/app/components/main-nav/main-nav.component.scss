@@ -1,9 +1,10 @@
 .nav {
+    display: flex;
+    position: fixed;
     width: 100%;
     background-color: white;
     padding-top: 1rem;
     padding-bottom: 1rem;
-    display: flex;
 }
 
 .nav__logo {
@@ -13,14 +14,19 @@
 
 .nav__list {
     list-style: none;
-    display: inline-block;
+    display: flex;
     margin-left: auto;
+    // justify-content: flex-end;
 }
 
 .nav__item {
     position: relative;
     display: inline-block;
     margin: 0 0.2rem;
+}
+
+#btn-menu {
+    display: none;
 }
 
 .toggle {
@@ -48,5 +54,24 @@
     .toggle {
         display: flex;
     }
+
+    .nav__list {
+        display: none;
+        flex-direction: column;
+    }
+
+    #btn-menu:checked ~ .nav__list {
+        display: flex;
+        position: absolute;
+        top: 4rem;
+        right: 1rem;
+        padding: 1rem;
+        background-color: white;
+    }
+
+    .nav__list>.nav__item {
+        margin: 1rem;
+    }
+
 }
 
