@@ -67,7 +67,6 @@
         flex-direction: column;
     }
 
-    // Resolver como hacer este selector
     #btn-menu:checked ~ .toggle .nav__line1{
         transform: rotate(-45deg) translateX(.5px);
     }
@@ -79,7 +78,7 @@
     #btn-menu:checked ~ .toggle .nav__line3 {
         transform: rotate(45deg) translateX(.5px);
     }
-    // fin de zona a corregir
+
     #btn-menu:checked ~ .nav__list {
         display: flex;
         position: absolute;
