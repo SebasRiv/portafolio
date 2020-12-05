@@ -45,6 +45,12 @@
     background-color: black;
 }
 
+.nav__line1,
+.nav__line2,
+.nav__line3 {
+    transform-origin: center right;
+}
+
 .nav-social {
     margin-left: 1rem;
 }
@@ -61,16 +67,16 @@
     }
 
     // Resolver como hacer este selector
-    #btn-menu:checked(:first-child) {
-        transform: rotate(45deg) translateX(.5px);;
+    #btn-menu:checked ~ .toggle .nav__line1{
+        transform: rotate(-45deg) translateX(.5px);
     }
 
-    #btn-menu:checked(:nth-child(2)) {
+    #btn-menu:checked ~ .toggle .nav__line2{
         opacity: 0;
     }
 
-    #btn-menu:checked(:last-child) {
-        transform: rotate(-45deg) translateX(.5px);;
+    #btn-menu:checked ~ .toggle .nav__line3 {
+        transform: rotate(45deg) translateX(.5px);
     }
     // fin de zona a corregir
     #btn-menu:checked ~ .nav__list {
