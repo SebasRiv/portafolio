@@ -3,9 +3,10 @@
     position: fixed;
     width: 100%;
     background-color: white;
-    padding-top: 1rem;
-    padding-bottom: 1rem;
+    padding-top: 2rem;
+    padding-bottom: 2rem;
     border-bottom: 1px solid black;
+    justify-content: space-between;
 }
 
 .nav__logo {
@@ -142,5 +143,16 @@
     .nav {
         padding-left: 3rem;
         padding-right: 3rem;
+    }
+}
+
+@media screen and (min-width:1024px) {
+    .nav {
+        padding-left: 10rem;
+        padding-right: 10rem;
+    }
+
+    .nav__item {
+        margin-left: 1rem;
     }
 }
