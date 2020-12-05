@@ -5,11 +5,13 @@
     background-color: white;
     padding-top: 1rem;
     padding-bottom: 1rem;
+    border-bottom: 1px solid black;
 }
 
 .nav__logo {
     display: inline-block;
     text-transform: uppercase;
+    font-weight: 600;
 }
 
 .nav__list {
@@ -19,10 +21,27 @@
     // justify-content: flex-end;
 }
 
+
 .nav__item {
     position: relative;
     display: inline-block;
     margin: 0 0.3rem;
+    font-weight: 600;
+}
+
+.nav__subtitle {
+    font-size: 1.5rem;
+    font-weight: 400;
+    color: gray;
+}
+
+.nav__contact {
+    display: none;
+    font-weight: 300;
+}
+
+.nav__subtitle {
+    display: none;
 }
 
 #btn-menu {
@@ -35,6 +54,7 @@
     flex-direction: column;
     align-items: flex-end;
     cursor: pointer;
+    padding: 10px;
 }
 
 .toggle>span {
@@ -49,6 +69,10 @@
 .nav__line2,
 .nav__line3 {
     transform-origin: center right;
+}
+
+.nav__line1,
+.nav__line3 {
     transition: 0.3s;
 }
 
@@ -58,6 +82,10 @@
 
 @media screen and (max-width: 827px) {
 
+    .nav__logo {
+        font-size: 2rem;
+    }
+
     .toggle {
         display: flex;
     }
@@ -65,7 +93,13 @@
     .nav__list {
         display: none;
         flex-direction: column;
+        font-size: 2rem;
+        font-weight: 400;
+        justify-content: center;
+        height: 600px;
+        overflow: auto;
     }
+
 
     #btn-menu:checked ~ .toggle .nav__line1{
         transform: rotate(-45deg) translateX(.5px);
@@ -82,14 +116,23 @@
     #btn-menu:checked ~ .nav__list {
         display: flex;
         position: absolute;
-        top: 4rem;
-        right: 1rem;
-        padding: 1rem;
+        top: 4.8rem;
         background-color: white;
+        width: 100%;
     }
 
     .nav__list>.nav__item {
         margin: 1rem;
+    }
+
+    .nav__contact {
+        display: flex;
+        font-weight: 400;
+        font-size: 1.2rem;
+    }
+
+    .nav__subtitle {
+        display: flex;
     }
 
 }
@@ -97,8 +140,7 @@
 @media screen and (max-width:1024px) {
 
     .nav {
-        padding-left: 2rem;
-        padding-right: 2rem;
+        padding-left: 3rem;
+        padding-right: 3rem;
     }
 }
-

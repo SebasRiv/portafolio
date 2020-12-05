@@ -6,14 +6,21 @@
     padding: 0;
     box-sizing: border-box;
     font-family: 'Inter', sans-serif;
-    font-size: 1rem;
-    font-weight: 600;
+    // font-weight: 600;
 }
 
 @media screen and (max-width: 827px) {
     .padding-default {
         padding-left: 40px;
         padding-right: 40px;
+    }
+
+}
+
+@media screen and (max-width: 1024px) {
+    .padding-default {
+        padding-left: 80px;
+        padding-right: 80px;
     }
 
 }
