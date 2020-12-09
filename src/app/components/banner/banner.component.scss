@@ -90,9 +90,12 @@
 
     .banner__welcome {
         display: flex;
-        width: 70%;
+        // position: relative;
+        width: 80%;
         flex-direction: column;
         justify-content: center;
+        padding-left: 4rem;
+        left: 4rem;
     }
 
     .banner__name {
@@ -100,7 +103,7 @@
     }
 
     .banner__message {
-        width: 80%;
+        width: 100%;
     }
 
     .banner__button {
