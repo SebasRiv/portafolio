@@ -69,11 +69,18 @@
     background-color: white;
     border-radius: 100%;
     vertical-align: middle;
+    // animation: rebota 0s ease-in-out infinite alternate;
 }
 
 .banner__ball:hover {
-    animation: rebota 0.5s infinite;
+    visibility: visible;
+    animation: rebota 1s forwards infinite;
+    animation-play-state: running;
 }
+
+// .banner__ball:active {
+//     animation-play-state: paused;
+// }
 
 @keyframes rebota {
     0%   {top: 0px;}
