@@ -21,10 +21,6 @@
     top: 6rem;
 }
 
-// .banner__welcome {
-
-// }
-
 .banner__name {
     text-align: center;
     font-weight: 500;
@@ -82,4 +78,32 @@
     // 25%  {top: -5px;}
     75%  {top: -15px}
     100% {top: 0px;}
-  }
+}
+
+@media screen and (min-width:1024px) {
+    .banner__container {
+        flex-direction: row-reverse;
+        justify-content: flex-end;
+        padding-left: 10rem;
+        padding-right: 10rem;
+    }
+
+    .banner__welcome {
+        display: flex;
+        width: 70%;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .banner__name {
+        text-align: left;
+    }
+
+    .banner__message {
+        width: 80%;
+    }
+
+    .banner__button {
+        margin: 0;
+    }
+}
