@@ -88,9 +88,13 @@
         padding-right: 10rem;
     }
 
+    .banner__user {
+        margin-left: 2rem;
+        margin-right: 4rem;
+    }
+
     .banner__welcome {
         display: flex;
-        // position: relative;
         width: 80%;
         flex-direction: column;
         justify-content: center;
