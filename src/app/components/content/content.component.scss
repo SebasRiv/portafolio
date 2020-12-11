@@ -1,6 +1,6 @@
 .content__container {
-    padding-left: 5rem;
-    padding-right: 5rem;
+    padding-left: 3rem;
+    padding-right: 3rem;
 }
 
 .content__nav {
@@ -18,8 +18,8 @@
     content: "";
     position: absolute;
     top: 0;
-    right: 15px;
-    left: 15px;
+    right: 10px;
+    left: 10px;
     border-top: 1px solid black;
     box-sizing: border-box;
 }
@@ -31,4 +31,17 @@
 .content__name {
     padding: 5px 15px;
     color: black;
+}
+
+.content__name::before {
+    content: "";
+    position: absolute;
+    top: 50%;
+    right: -2px;
+    left: -2px;
+    border-bottom: 1px solid black;
+    will-change: transform;
+    // transition: inherit .25 ease-in-out;
+    transform: scaleX(0);
+    transform-origin: center left;
 }
