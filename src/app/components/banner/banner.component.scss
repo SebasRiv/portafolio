@@ -8,7 +8,10 @@
 .banner__user {
     height: 400px;
     text-align: center;
-    // padding: 6rem 0;
+}
+
+.banner__welcome {
+    margin-bottom: 10rem;
 }
 
 .banner__image {
@@ -75,7 +78,6 @@
 
 @keyframes rebota {
     0%   {top: 0px;}
-    // 25%  {top: -5px;}
     75%  {top: -15px}
     100% {top: 0px;}
 }
