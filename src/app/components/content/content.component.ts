@@ -9,25 +9,50 @@ export class ContentComponent implements OnInit {
 
   constructor() { }
 
-  selected: boolean = false;
   element: any = null;
+  states: boolean[] = [false, false, false, false, false];
 
   active(e: any) {
-    console.log(this.element);
 
-    if (this.element == e.target) {
-      console.log(true);
-    } else {
-      console.log(false);
+    if (this.element != e.target) {
+      switch (e.target.innerText) {
+        case "Item 1":
+          for (const index in this.states) {
+            parseInt(index) != 0 ? this.states[index] = false : this.states[index] = true;
+          }
+          break;
+        case "Item 2":
+          for (const index in this.states) {
+            parseInt(index) != 1 ? this.states[index] = false : this.states[index] = true;
+          }
+          break;
+        case "Item 3":
+          for (const index in this.states) {
+            parseInt(index) != 2 ? this.states[index] = false : this.states[index] = true;
+          }
+          break;
+        case "Item 4":
+          for (const index in this.states) {
+            parseInt(index) != 3 ? this.states[index] = false : this.states[index] = true;
+          }
+          break;
+        case "Item 5":
+          for (const index in this.states) {
+            parseInt(index) != 4 ? this.states[index] = false : this.states[index] = true;
+          }
+          break;
+
+        default:
+          break;
+      }
+      this.element = e.target;
     }
-    this.element = e.target;
-    this.selected = !this.selected;
   }
 
-  classes() {
+  classes(state: boolean) {
     return {
       'content__item': true,
-      'active': this.selected
+      'active': state
     }
   }
 
