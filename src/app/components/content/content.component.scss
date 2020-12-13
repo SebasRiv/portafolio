@@ -29,6 +29,8 @@
 }
 
 .content__name {
+    position: relative;
+    display: inline-block;
     padding: 5px 15px;
     color: black;
 }
@@ -41,9 +43,13 @@
     left: -2px;
     border-bottom: 1px solid black;
     will-change: transform;
-    // transition: inherit .25 ease-in-out;
     transform: scaleX(0);
     transform-origin: center left;
+    box-sizing: border-box;
+}
+
+.content__item.active .content__name::before {
+    transform: scale(1);
 }
 
 @media screen and (min-width: 1024px) {

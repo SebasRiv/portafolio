@@ -7,14 +7,14 @@
                 </span>
             </a>
         </li>
-        <li class="content__item">
+        <li (click)="active($event)" [ngClass]="classes()">
             <a href="#" class="content__link">
                 <span class="content__name">
                     Item 2
                 </span>
             </a>
         </li>
-        <li class="content__item">
+        <li (click)="active($event)" [ngClass]="classes()">
             <a href="#" class="content__link">
                 <span class="content__name">
                     Item 3
