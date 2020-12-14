@@ -13,6 +13,7 @@ export class ContentComponent implements OnInit {
   states: boolean[] = [false, false, false, false, false];
 
   active(e: any) {
+    e.preventDefault();
 
     if (this.element != e.target) {
       switch (e.target.innerText) {

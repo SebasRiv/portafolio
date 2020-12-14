@@ -46,6 +46,8 @@
     transform: scaleX(0);
     transform-origin: center left;
     box-sizing: border-box;
+    transition: transform .25s ease-in-out;
+    transform-origin: center left;
 }
 
 .content__item.active .content__name::before {
