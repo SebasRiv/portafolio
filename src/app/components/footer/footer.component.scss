@@ -6,6 +6,7 @@
     background-color: black;
     color: white;
     text-align: center;
+    overflow: hidden;
     z-index: 0;
 }
 
@@ -59,6 +60,10 @@
 .social__list>.list__item .list__link {
     padding-left: 9px;
     padding-right: 9px;
+}
+
+.footer__copyright {
+    margin-bottom: 20px;
 }
 
 @media screen and (min-width: 1200px) {
