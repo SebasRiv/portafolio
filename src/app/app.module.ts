@@ -8,6 +8,7 @@ import { BannerComponent } from './components/banner/banner.component';
 import { ContentComponent } from './components/content/content.component';
 import { CardsContainerComponent } from './components/cards-container/cards-container.component';
 import { CardComponent } from './components/card/card.component';
+import { FooterComponent } from './components/footer/footer.component';
 
 @NgModule({
   declarations: [
@@ -17,7 +18,8 @@ import { CardComponent } from './components/card/card.component';
     BannerComponent,
     ContentComponent,
     CardsContainerComponent,
-    CardComponent
+    CardComponent,
+    FooterComponent
   ],
   imports: [
     BrowserModule
