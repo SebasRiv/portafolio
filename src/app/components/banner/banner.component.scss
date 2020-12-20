@@ -70,9 +70,9 @@
     vertical-align: middle;
 }
 
-.banner__ball:hover {
+.banner__button:hover>.banner__ball {
     visibility: visible;
-    animation: rebota 1s forwards infinite;
+    animation: rebota 0.50s forwards infinite;
     animation-play-state: running;
 }
 
