@@ -10,7 +10,7 @@ export class ContentComponent implements OnInit {
   constructor() { }
 
   element: any = null;
-  states: boolean[] = [false, false, false, false, false];
+  states: boolean[] = [true, false, false, false, false];
 
   active(e: any) {
     e.preventDefault();

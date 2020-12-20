@@ -56,6 +56,10 @@
     transform: scale(1);
 }
 
+// .content__item:hover ~ .content__item:not(.active){
+//     background-color: gray;
+// }
+
 .content__button {
     position: relative;
     display: inline-flex;
