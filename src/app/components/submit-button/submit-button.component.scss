@@ -1,0 +1,49 @@
+.banner__button {
+    display: block;
+    position: relative;
+    width: 180px;
+    top: 3rem;
+    bottom: 3rem;
+    padding-left: 2rem;
+    padding-right: 2rem;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    border-radius: 0;
+    border: 0;
+    color: white;
+    font-weight: 500;
+    font-size: 1.1rem;
+    text-decoration: none;
+    background-color: black;
+    margin: 0 auto;
+}
+
+.banner__ball {
+    display: inline-block;
+    position: relative;
+    margin-left: 10px;
+    height: 6px;
+    width: 6px;
+    color: white;
+    background-color: white;
+    border-radius: 100%;
+    vertical-align: middle;
+}
+
+.banner__button:hover>.banner__ball {
+    visibility: visible;
+    animation: rebota 0.50s forwards infinite;
+    animation-play-state: running;
+}
+
+@keyframes rebota {
+    0%   {top: 0px;}
+    75%  {top: -15px}
+    100% {top: 0px;}
+}
+
+@media screen and (min-width:1024px) {
+    .banner__button {
+        margin: 0;
+    }
+}

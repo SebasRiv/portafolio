@@ -9,6 +9,7 @@ import { ContentComponent } from './components/content/content.component';
 import { CardsContainerComponent } from './components/cards-container/cards-container.component';
 import { CardComponent } from './components/card/card.component';
 import { FooterComponent } from './components/footer/footer.component';
+import { SubmitButtonComponent } from './components/submit-button/submit-button.component';
 
 @NgModule({
   declarations: [
@@ -19,7 +20,8 @@ import { FooterComponent } from './components/footer/footer.component';
     ContentComponent,
     CardsContainerComponent,
     CardComponent,
-    FooterComponent
+    FooterComponent,
+    SubmitButtonComponent
   ],
   imports: [
     BrowserModule
